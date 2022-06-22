@@ -1,0 +1,110 @@
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+        <a href="#" style="font-size: 15;"><em>Igembe</em> Professionals</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="has-submenu"><a href="#section2">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#section2">Who we are?</a></li>
+                    <li><a href="#section3">What we do?</a></li>
+                    <li><a href="#section3">How it works?</a></li>
+                    <li><a href="" rel="sponsored" class="external">External URL</a></li>
+                </ul>
+            </li>
+            <li><a href="#section4">Professions</a></li>
+            <li><a href="#section5">Video</a></li> 
+            <li><a href="#section6">Contact</a></li>
+            <li><a href="{% url 'profile' %}">profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="body" style="padding-top: 100px; max-width: 1000px;
+  height: 500px; text-align: center;padding-left: 0px;padding-right: 0px; ">
+<h1 style="text-align: center; color: darkslateblue; ">Fill in Your Details</h1>
+
+<div class="form-group">
+    {% include 'core/messages.html' %}
+   <form method="POST" action="{% url 'profile' %}" enctype="multipart/form-data" style="padding:40px;margin:20px;border: medium #85b9e9 groove;;
+    text-align: center;">
+    {% csrf_token %}
+    {{form|crispy}}
+    <button type="submit" class="btn btn-success">submit</button>
+    </form>
+</div>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    
+<script>
+    $(function () {
+        $("#contact_wrap").validate({
+
+            errorClass: "my-error-class", //apply a css class for error if you have style for valid
+            validClass: "my-valid-class", //apply a css class for error if you have style for error
+
+            rules: {
+                first_name: {
+                    required: true
+                },
+                second_name:{
+                    required: true
+                },
+                last_name:{
+                    required: true
+                },
+                id_no:{
+                    required:true
+                },
+                graduation_year:{
+                    required:true
+                },
+                resume:{
+                    required:true
+                }
+
+            },
+            messages: {
+                first_name: {
+                    required: "Please enter your First Name."
+                },
+                last_name:{
+                    required: ""
+                },
+
+            },
+        });
+
+    });
+</script>
+{% endblock content%}

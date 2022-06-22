@@ -1,0 +1,493 @@
+
+ {% load static %}
+ 
+
+ {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Igembe Professionals Platform</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  <style>
+    figcaption {
+      background-color: white;
+      color: black;
+      font-style: italic;
+      padding: 2px;
+      text-align: center;
+    }
+    
+  </style>
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#" style="font-size: 15;"><em>Igembe</em> Professionals</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+            <li><a href="" rel="sponsored" class="external">External URL</a></li>
+          </ul>
+        </li>
+        <li><a href="#section4">Professions</a></li>
+         <li><a href="#section5">Video</a></li> 
+        <li><a href="#section6">Contact</a></li>
+        <li><a href="{% url 'profile' %}">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Portfolio Platform for  Igembe Proffesionals</h6>
+              <h2><em>Your</em> CV</h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+              </div>
+              <div class="content-hide">
+                <p>The graduate to chose the course/courses that he or she pursued at various institutions and proceed to upload the Curriculum Vitae.</p></p>
+                <p class="hidden-sm">The opportunities available shall be granted at random as per the qualifications of the  candidate.</p>
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Professionals</h4>
+              </div>
+              <div class="content-hide">
+                <p>The candidates are supposed to be of a particular profession pursued in a recognized institution. Candidates who may have also pursued their studies
+                  outside the country can also upload their CVs.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Igembe Elites Platform</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Job opportunities</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Our Mission</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <h4 style="text-align: center;">Job Opportunities Pool</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    
+                    <p> Igembe Elites Platform is a non-profit organization sponsored by Ambassador Kirimi Kaberia who is  the Principal Secretary State Department for Industrialization. It is a pool to bring together  and link Igembe
+                      diverse Professionals to various job opportunities both locally and internationally.</p>
+                      <p>It constitute of  Professionals from the three Igembe Constituences i.e Igembe North,Igembe Central and Igembe South Thank you.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <h4 style="text-align: center;">Sponsors</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    
+
+                    <figure>
+                      <img src="{% static 'assets/images/amb_Kaberia.jpg' %}" alt="">
+                      <p><figcaption>Amb. Peter Kaberia, <em>CBS Principal Secretary <br>
+                      State Department for Industrialization</em></figcaption></p>
+                    </figure>
+                  </div>
+                  <div class="col-md-6">
+                   
+                    <p>Igembe Elites Platform is sponsored and managed by Amb. Kirimi Kaberia who is a career Diplomat having served in many countries. He was the Principal Secretary for State Department for Mining &
+                    Petroleum before his posting to the State Department for Industrialization..</p> 
+                    <p>"Change in our society begins with us.We are the ones to bring the change we wish it existed." He quoted.</p>
+                  </div>
+                </div>
+              </article>
+              
+              <article id='tabs-3'>
+                <h4 style="text-align: center;">Mission</h4>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-03.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    
+                    <p>Our mission is to help humanity thrive by enabling  Igembe youth to attain their peaks of productivity and innovation.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Choose Your profession</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="{% static 'assets/images/engineering.png' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Engineering</h4>
+              <p>Professionals of any eligible engineering course section.The qualifications range from Certificate,Diploma,Under-Graduate Degree,Post-Graduate degree,Masters and PHD.</p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a> <!--proceed to cv upload section -->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/doc.jpeg' %}" alt="Course #2" width="" height="">
+            <div class="down-content">
+              <h4>Medical Professions</h4>
+              <p> All the medical professionals in any registered medical field inclusive of the veterenary service providers and other health services. </p>
+              
+              <div class="text-button-free">
+                <a href="{% url 'cv-upload}">See more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/teacher.jpg' %}" alt="Course #3">
+            <div class="down-content">
+              <h4>Education and other Arts Professions</h4>
+              <p> The teaching professionals in any teaching field inclusive of lecturers and ECDE teaching practioners.</p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/courses-04.jpg' %}" alt="Course #4">
+            <div class="down-content">
+              <h4>Mass Communication</h4>
+              <p>This is inclusive of  mass communication practioners such as journalists etc.</p>
+              
+              <div class="text-button-free">
+                <a href="{% url 'cv-upload}">Free <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/business.jpeg' %}" alt="">
+            <div class="down-content">
+              <h4>Business and Commerce</h4>
+              <p> This is inclusive of the business related courses that are eligible both locally and internationally recognized. Marketing courses 
+                are also inclusive of this section.
+              </p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/it.jpeg' %}" alt="">
+            <div class="down-content">
+              <h4>Information Technology</h4>
+              <p>IT related  fields professional  practioners. </p>
+    
+              <div class="text-button-free">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/law.png' %}" alt="">
+            <div class="down-content">
+              <h4>Law and Social Sciences</h4>
+              <p>Law practioners are are to upload their CVs in this section. It is also inclusive of arts and social sciences 
+                professions such as Administration courses,Social workers.
+              </p>
+              <div class="text-button-free">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/math.jpeg' %}" alt="">
+            <div class="down-content">
+              <h4>Statistics and Mathematics Professions</h4>
+              <p>The professions with specialisations in  Mathematics field should upload their CVs in this section.</p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/plant.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Technical Professions</h4>
+              <p> This section is inclusive of all basic technical  courses such as Plant Operators,Plumbing etc</p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/science.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Sciences</h4>
+              <p> This comprises of all courses and professions with a science background such as Pure Physics,Pure Chemistry etc.</p>
+              
+              <div class="text-button-free">
+                <a href="{% url 'profile' %}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static 'assets/images/professions.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Other Professions</h4>
+              <p> This section includes all other professions which may not be listed but are both locally and internationally recognized.</p>
+              
+              <div class="text-button-pay">
+                <a href="{% url 'cv-upload}">see more <i class="fa fa-angle-double-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>A testimonial clip</span>
+            <h4>Watch the video to learn more <em>Igembe Elites Platform</em></h4>
+            <p>  
+             A short description pf our mission, vision and achievements of Igembe Elites Platform</p>
+            <div class="main-button"><a rel="nofollow" href="https:" target="_parent">upload</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <div class="video-caption">
+              <h4>Igembe Elites</h4>
+            </div>
+            <figure>
+              <a href="https://www.youtube.com/watch?v=r9LtOG6pNUw" class="play"><img src="{% static 'assets/images/main-thumb.png' %}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7858.381456110504!2d37.93459295854564!3d0.22685607455050633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788357e999bf1c7%3A0x6c8f1aa907896e32!2sMaua!5e1!3m2!1sen!2ske!4v1654880900908!5m2!1sen!2ske" width="100%" height="422px" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2022 by Igembe Elites  
+          
+           | Design: <a href="https://Cyteque.com" rel="sponsored" target="_parent">Cyteque Technologies</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
+
+{% endblock content %}
